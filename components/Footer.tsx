@@ -11,6 +11,10 @@ const Footer = () => {
             Tout droits réservé &copy;
           </p>
         </div>
+
+        <div className="footer__links">
+          
+        </div>
       </div>
     </footer>
   )
