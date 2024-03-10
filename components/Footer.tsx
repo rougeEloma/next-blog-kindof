@@ -27,12 +27,13 @@ const Footer = () => {
               </div>
             ))}
           </div>
+        </div>
 
         <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
           <p>@2024 ZongaNaCar. Tous Droits Réservés</p>
 
            
-          <div className="footer-copyrights-link">
+          <div className="footer__copyrights-link">
             <Link href="/" className="text-gray-500">
              politique de confidentialité 
             </Link>
@@ -41,7 +42,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-      </div>
     </footer>
   )
 }
