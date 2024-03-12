@@ -1,8 +1,15 @@
-import React from 'react'
+import { SearchManufaturerProps } from '@/types'
+import { Combobox, Transition } from '@headlessui/react'
 
-const SearchManufaturer = () => {
+const SearchManufaturer = ({ manufacturer, setManufacturer }: SearchManufaturerProps) => {
   return (
-    <div>SearchManufaturer</div>
+    <div className='search-manufacturer'>
+        <Combobox>
+            <div className="relative w-full">
+                
+            </div>
+        </Combobox>
+    </div>
   )
 }
 
