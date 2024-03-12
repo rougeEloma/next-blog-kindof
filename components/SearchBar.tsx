@@ -1,9 +1,11 @@
 "use client"
 
+import { manufacturers } from "@/constants"
 import { SearchManufaturer } from "."
 import { useState } from "react"
 
 const SearchBar = () => {
+  const [manufacturer, setManufacturer] = useState('')
   function handleSearch () {}
 
   return (
