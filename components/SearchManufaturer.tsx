@@ -2,8 +2,10 @@
 import { SearchManufaturerProps } from '@/types'
 import { Combobox, Transition } from '@headlessui/react'
 import Image  from 'next/image'
+import { useState } from 'react'
 
 const SearchManufaturer = ({ manufacturer, setManufacturer }: SearchManufaturerProps) => {
+  const [query, setQuery] = useState('');
   return (
     <div className='search-manufacturer'>
         <Combobox>
