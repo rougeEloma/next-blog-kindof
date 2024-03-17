@@ -6,8 +6,8 @@ import { Footer, NavBar } from "@/components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ki Car",
-  description: "Le meilleur hub de vegicule routier à kinshasa ",
+  title: "ZongaNaCar",
+  description: "Le meilleur agence de mocation de vegicule routier à kinshasa ",
 };
 
 export default function RootLayout({
