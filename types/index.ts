@@ -12,7 +12,7 @@ export interface SearchManufaturerProps {
     setManufacturer: (manufacturer: string) => void;
 }
 
-export interface CarPros {
+export interface CarProps {
     city_mpg: number;
     class: string;
     combination_mpg: number;
