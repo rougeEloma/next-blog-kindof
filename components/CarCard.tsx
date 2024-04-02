@@ -10,8 +10,9 @@ interface CarCardProps {
 
 const CarCard = ({ car }: CarCardProps) => {
     const { city_mpg, year, make, model, transmission, drive } = car;
+
   return (
-    <div className="car-card group">
+    <div className="car-card group mt-3">
         <div className="car-card__content">
             <h2 className="car-card__content-title">
                 {make} {model}
@@ -34,21 +35,21 @@ const CarCard = ({ car }: CarCardProps) => {
         <div className="relative flex w-full mt-2">
             <div className="flex group-hover:invisible w-full justify-between text-gray">
                 <div className="flex flex-col justify-center items-center gap-2">
-                    <Image src="/steering-wheel.svg" width={20} height={20} alt="streering wheel" />
+                    <Image src="/steering-wheel.svg" width={20} height={20} alt="volant" />
                     <p className="text[14px] ml-4">
                         {transmission === 'a' ? 'automactique' : 'manuelle'}
                     </p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
-                    <Image src="/steering-wheel.svg" width={20} height={20} alt="streering wheel" />
+                    <Image src="/tire.svg" width={20} height={20} alt="pneu" />
                     <p className="text[14px] ml-4">
-                        {transmission === 'a' ? 'automactique' : 'manuelle'}
+                        {drive.toUpperCase()}
                     </p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
-                    <Image src="/steering-wheel.svg" width={20} height={20} alt="streering wheel" />
+                    <Image src="/gas.svg" width={20} height={20} alt="consommation" />
                     <p className="text[14px] ml-4">
-                        {transmission === 'a' ? 'automactique' : 'manuelle'}
+                        {Number(city_mpg*1.5).toFixed(0)} K/G
                     </p>
                 </div>
             </div>
