@@ -17,6 +17,12 @@ const CarCard = ({ car }: CarCardProps) => {
                 {make} {model}
             </h2>
         </div>
+
+        <p className="flex mt-6 text-[32px]">
+            <span className="self-start text-[18px] font-semibold">
+                20$
+            </span>
+        </p>
     </div>
   )
 }
