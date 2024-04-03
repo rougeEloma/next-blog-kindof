@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { CarProps } from "@/types";
-import { CustomButton } from ".";
+import { CarDetails, CustomButton } from ".";
 
 interface CarCardProps {
     car: CarProps;
@@ -15,7 +15,7 @@ const CarCard = ({ car }: CarCardProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="car-card group mt-3">
+    <div className="car-card group mt-3 ">
         <div className="car-card__content">
             <h2 className="car-card__content-title">
                 {make} {model}
@@ -67,6 +67,12 @@ const CarCard = ({ car }: CarCardProps) => {
                     handleClick={() => setIsOpen(true)}/>
             </div>
         </div>
+
+        <CarDetails 
+            isOpen={isOpen}
+            closeModal={() => setIsOpen(false)}
+            car={car}
+        />
     </div>
   )
 }
