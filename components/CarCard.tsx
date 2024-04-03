@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { CarProps } from "@/types";
+import { CustomButton } from ".";
 
 interface CarCardProps {
     car: CarProps;
@@ -52,6 +53,13 @@ const CarCard = ({ car }: CarCardProps) => {
                         {Number(city_mpg*1.5).toFixed(0)} K/G
                     </p>
                 </div>
+            </div>
+
+            <div className="car-card__btn-container">
+                <CustomButton
+                    title="Voir Plus"
+                    containerStyles="full py-[16px] rounded-full bg-primary-blue"
+                    />
             </div>
         </div>
     </div>
