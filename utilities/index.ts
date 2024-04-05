@@ -1,3 +1,5 @@
+import { CarProps } from "@/types";
+
 export async function fetchCars() {
     const headers = {
 		'X-RapidAPI-Key': 'aedc3faee5msh1cc255bbe1c3e15p16c9bfjsn5cebfd25d23a',
@@ -15,3 +17,6 @@ export async function fetchCars() {
     
 }
 
+export const generateCarImageUrl = (car: CarProps, angle?: string) => {
+    const url = new URL("https://cdn.imagin.studio/getimage");
+}
