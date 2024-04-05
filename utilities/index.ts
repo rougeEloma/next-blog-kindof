@@ -17,6 +17,6 @@ export async function fetchCars() {
     
 }
 
-export const generateCarImageUrl = (car: CarProps, angle?: string) => {
+export const generateCarImageUrl = (car: CarProps) => {
     const url = new URL("https://cdn.imagin.studio/getimage");
 }
