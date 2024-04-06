@@ -10,7 +10,7 @@ const NavBar = () => {
         <Link href="/" className="flex  justify-center items-center">
           <Image
           src="/zonganacar.png"
-          alt="Car logo hub"
+          alt="logo zonga na car"
           width={118}
           height={18}
           className="object-contain"/>
