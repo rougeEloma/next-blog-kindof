@@ -12,9 +12,9 @@ const Hero = () => {
         <p className="hero__subtitle">ameliorer votre experience de location de voiture avec notre logiciel exceptionel.</p>
 
         <CustomButton 
-            title='Explore Cars'
+            title='Explorer nos voitures'
             containerStyles="bg-primary-blue text-white rounded-full mt-10"
-            alternative="s'inscrire"
+            alternative="explorer voitures"
             handleClick={handleScroll} />
         </div>
 
